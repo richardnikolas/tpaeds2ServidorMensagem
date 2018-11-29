@@ -71,7 +71,7 @@ Ordem | Número de mensagens trocadas | Mensagem escolhida
 <i>*Note que a mensagem "2 4 se você lembrar" não foi enviada pois as mensagens 1, 2, e 3 da conversa deste par ainda não foi enviada. *O vetor na segunda coluna representa o número de mensagens que cada par já trocou entre si. A primeira posição é referente ao par com identificador 0, a segunda ao par com identificador 1 e assim sucessivamente.</i>
 
 <h2>3 Entrada e saída</h2>
-<p>A entrada será realizada através da entrada padrão <b>stdin</b>. Primeiramente será informados um inteiro <i>1 <= k <= 1000</i> que indica o número máximo de lotes recebidos que um par de usuários pode ficar sem trocar mensagens. Exemplo: se k = 7, o servidor acabou de receber o 9o lote de mensagens e o par i só trocou mensagens no primeiro e segundo lote, a lista de espera deste par deverá ser
+<p>A entrada será realizada através da entrada padrão <b>stdin</b>. Primeiramente será informados um inteiro <i>1 <= k <= 1000</i> que indica o número máximo de lotes recebidos que um par de usuários pode ficar sem trocar mensagens. Exemplo: se k = 7, o servidor acabou de receber o 9º lote de mensagens e o par i só trocou mensagens no primeiro e segundo lote, a lista de espera deste par deverá ser
 desalocada. <br/>
 Posteriormente serão passados os lotes de mensagens. Cada lote se inicia com a string Lote i onde <i>1 <= i <= 10000</i> é o número do lote e termina com a string Fim. Dentro de cada lote serão passadas as mensagens. Cada mensagem será enviada em uma linha e contém três campos separados por ponto e virgula (;). O primeiro campo será um identificador inteiro do par de usuários que está trocando a mensagem, o segundo o identificador inteiro de ordem da mensagem e o terceiro o conteúdo: ID Par;ID Ordem;Conteudo. O tamanho máximo de conteúdo de uma mensagem é de 500 caracteres. <br/>
 Para informar que não serão enviados mais lotes será passado uma linha contendo -1. <br/>
@@ -81,24 +81,24 @@ Exemplo de entrada com k = 10 e os dois lotes utilizados no exemplo anterior fic
 10
 Lote 1
 3;2;Estou fazendo agora
-0;1;Ol´a, tudo bem com vocˆe?
-1;2;N˜ao
-1;1;Vocˆe vem jantar hoje?
-0;2;Tudo sim e vocˆe?
-1;3;Vou ter que trabalhar at´e mais tarde
-2;4;se vocˆe lembrar
+0;1;Olá, tudo bem com você?
+1;2;Não
+1;1;Você vem jantar hoje?
+0;2;Tudo sim e você?
+1;3;Vou ter que trabalhar até mais tarde
+2;4;se você lembrar
 3;1;Conseguiu fazer o TP?
-3;3;Esta muito f´acil
+3;3;Esta muito fácil
 Fim
 
 Lote 2
 2 2 Vou
-2 3 leva na aula amanha
+2 3 leva na aula amanhã
 0 3 Tudo bem tbm
-4 2 Parab´ens! Que dia vamos comemorar?
+4 2 Parabéns! Que dia vamos comemorar?
 2 1 Vai precisar da grana?
 4 1 Passei no vestibular!
-3 4 Esta mesmo
+3 4 Está mesmo
 Fim
 -1
 ```
